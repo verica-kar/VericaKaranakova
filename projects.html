@@ -4,60 +4,98 @@
   <meta charset="utf-8">
   <title>Verica Karanakova</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.cdnfonts.com/css/southernsky" rel="stylesheet">
+  <style> 
+    @import url('https://fonts.cdnfonts.com/css/southernsky'); 
+  </style>
+  <script async src="js/script.js"></script>
 </head>
 
 <body>
   <div id="nav">
-    <div id="logo2-cont">
-      <a href="index.html"><img id="logo2" src="images/logo2.png" alt="VK logo in white with a black background with Verica Karanakova written next to it"></a>
-    </div>
-    <nav id="other-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="projects.html">Projects</a></li>
-      </ul>
+    
+    <nav>
+      
+        <div id=" navigationDIV">
+          <div id="logo2-cont">
+            <a href="index.html"><img id="logo2" src="images/logo2.png" alt="VK logo in white with a black background with Verica Karanakova written next to it"></a>
+          </div>
+          
+          <div id="other-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="resume.html">Resume</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+      
+        </div>
     </nav>
   </div>
 
   <div id="projects">
     <h1>Projects</h1>
+    <p class="github"> Click the images to open in Github</p>
     <section>
-      <div id="connectFour">
-        <h2>Connect Four</h2>
-        <h3><span class="it">Language: Haskell</span></h3>
+      <div class="oddP" class="proj">
         <div class="list">
-          <ul>
-            <li>Programmed IO for person and AI to compete in full connect-4 game</li>
-            <li>Coded AI to rely on minimax algorithm to play next best move</li>
-            <li>Included changeable AI difficulty based on prune level of game tree, higher prune level makes it harder to beat AI</li>
-            <li>Integrated a checker to check for win or draw before every next move</li>
-            <li>Connect-4 board gets redrawn after every played move to include most recent move</li>
-            <li>Created checker for illegal moves to deny illegal move, inform of illegal move, and allow a new move</li>
-            <li class="github">click the image to open in GitHub</li>
-          </ul>
+          <div class="projList">
+            <h2 class="h2p">Civil Advocacy App</h2>
+            <h3><span class="it">Java, Android Studio, Git, Google API, XML, JSON, Location Services</span></h3>
+            <ul>
+              <li>Developed Android app that leverages location data to provide users with local government officials’ information</li>
+              <li>Implemented a ViewPager to display interactive list of political officials that represent current location, or input location, at each government level</li>
+              <li>Utilized Google Civic Information API (REST service and JSON results) to acquire government official data</li>
+              <li>Incorporated on-click listener to open full detailed view of individual government representative when an official's list entry is selected, and displays larger version of image when image is clicked</li>
+              <li>Leveraged Android Fused Location Provider services to determine user’s current location</li>
+            </ul>
+          </div>  
+          <div id="ca">
+            <a href="https://github.com/verica-kar/ConnectFour"><img id="civilSS" class="screenshot" src="" alt="A virtual simulator of a phone displaying an // from my Civil Advocacy app"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="evenP" class="proj">
+        <div class="list">
+          <div  class="projList">
+            <h2 class="h2p">Connect Four</h2>
+            <h3><span class="it">Haskell, Minimax Algorithm, Alpha-Beta Pruning, AI Opponent, Git, Terminal</span></h3>
+            <ul>
+              <li>Programmed terminal based Connect 4 game with AI opponent</li>
+              <li>Calculated next best move for AI to play via Minimax algorithm and Alpha-Beta pruning</li>
+              <li>Integrated game state monitoring to check for winning move or draw</li>
+              <li>Refreshed display elements to accurately represent game state transitions</li>
+              <li>Implemented game tree pruning for customizable AI opponent difficulty</li>
+              <li>Created illegal move management that included denial and informing of move</li>
+            </ul>
+          </div>
           <div id="cf">
-            <a href="https://github.com/verica-kar/ConnectFour"><img id="connectFourSS" src="images/connectFourSS.png" alt="Playing Connect Four in the terminal against AI"></a>
+            <a href="https://github.com/verica-kar/ConnectFour"><img id="connectFourSS" class="screenshot" src="images/connectFourSS.png" alt="Playing Connect Four in the terminal against AI"></a>
           </div>
         </div>
       </div>
     </section>
     
     <section>
-      <div id="newsAgg">
-        <h2>News Aggregator</h2>
-        <h3><span class="it">Language: Java</span></h3>
+      <div class="oddP" class="proj">
         <div class="list">
-          <ul>
-            <li>Implemented a view pager to display up to 10 news articles from selected source</li>
-            <li>Created a dynamic menu to filter news sources when a specific news category is selected</li>
-            <li>Incorporated onSaveInstanceState and onRestoreInstanceState to save data when switching orientation</li>
-            <li>Utilized Android Volley to download corresponding JSON File, then parsed file to obtain sources or articles</li>
-            <li>Incorporated setOnClickListener to open full article on web when article title, image, or text is clicked</li>
-            <li class="github">click the image to open in GitHub</li>
-          </ul>
+          <div class="projList">
+            <h2 class="h2p">News Aggregator</h2>
+            <h3><span class="it">Language: Java</span></h3>
+            <ul>
+              <li>Implemented a view pager to display up to 10 news articles from selected source</li>
+              <li>Created a dynamic menu to filter news sources when a specific news category is selected</li>
+              <li>Incorporated onSaveInstanceState and onRestoreInstanceState to save data when switching orientation</li>
+              <li>Utilized Android Volley to download corresponding JSON File, then parsed file to obtain sources or articles</li>
+              <li>Incorporated setOnClickListener to open full article on web when article title, image, or text is clicked</li>
+            </ul>
+          </div>  
           <div id="na">
-            <a href="https://github.com/verica-kar/NewsAggregator"><img id="newsAggSS" src="images/newsAggSSUnav.png" alt="A virtual simulator of a phone displaying an article from my News Aggregator app"></a>
+            <a href="https://github.com/verica-kar/NewsAggregator"><img id="newsAggSS" class="screenshot" src="images/newsAggSS.png" alt="A virtual simulator of a phone displaying an article from my News Aggregator app"></a>
           </div>
         </div>
       </div>

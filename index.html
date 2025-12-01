@@ -4,6 +4,11 @@
   <meta charset="utf-8">
   <title>Verica Karanakova</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.cdnfonts.com/css/southernsky" rel="stylesheet">
+  <style> 
+    @import url('https://fonts.cdnfonts.com/css/southernsky'); 
+  </style>
+  <script async src="js/script.js"></script>
 </head>
 
 <body>
@@ -13,6 +18,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="resume.html">Resume</a></li>
         <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -25,7 +31,7 @@
         <div id="personalPhoto">
           <img src="images/personalPhoto.jpg" alt="">
         </div>
-        <div id="am-songs">
+        <!--<div id="am-songs">-->
           <div id="am-cont">
             <h2 id="am">About <span class="cursive">Me</span></h2>
             <p>I currently graduated from Illinois Institute of Technology with a Bachelor's of Science in Computer Science, cum laude.  
@@ -36,7 +42,7 @@
               figure skating, and ballroom/latin dance for a little bit of time. In high school I joined the 
               the dance team and dance company.</p>
           </div>
-          <section>
+          <!--<section>
             <div id="songs">
               <h2>Current 5 Favorite <span class="cursive">Songs</span></h2>
               <ul>
@@ -48,17 +54,23 @@
               </ul>
             </div>
           </section>
-        </div>
+        </div>-->
       </div>
     </section>
 
     <section>
       <div id="drawing-painting">
-        <h2>My Favorite <span class="cursive">Drawing</span> and <span class="cursive">Paintings</span> That I've Done</h2>
+        <div id="dph2">
+          <h2>My Favorite <span class="cursive">drawing</span> and <span class="cursive">paintings</span> That I've Done</h2>
+        </div>
         <div id="pimgs">
-          <img src="images/world.JPG" alt="A painthing with Earth in the lower left corner and an astronaut looking at it from the right side of the canvas">
-          <img src="images/flowerd.JPG" alt="A drawing of a flower with it alternating being in black and white, colored, and having a blue/purple filter over it">
-          <img src="images/flowerp.jpg" alt="A light grey letter D with painted pink cartoon flowers with gold accents, dark grey leaves, and a blue monarch butterly at the top of the letter">
+          <div id="slider-container">
+            <img class="slider-image" src="images/world.JPG" alt="A painthing with Earth in the lower left corner and an astronaut looking at it from the right side of the canvas">
+            <img class="slider-image" src="images/flowerd.JPG" alt="A drawing of a flower with it alternating being in black and white, colored, and having a blue/purple filter over it">
+            <img class="slider-image" src="images/flowerp.jpg" alt="A light grey letter D with painted pink cartoon flowers with gold accents, dark grey leaves, and a blue monarch butterly at the top of the letter">
+            <button id="prev" onclick="plusSlides(-1)">&#10094;</button>
+            <button id="next" onclick="plusSlides(1)">&#10095;</button>
+          </div>
         </div>
       </div>
     </section>
