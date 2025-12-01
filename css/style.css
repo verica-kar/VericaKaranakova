@@ -4,6 +4,10 @@ body {
   margin-right: 5em;
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
 /*    TEXT    */
 
 h1 {
