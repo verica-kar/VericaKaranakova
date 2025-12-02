@@ -328,9 +328,8 @@ ul li {
   width: auto;
 }
 
-#pimgs {
+#pimgs          {
   width: 100%;
-  height: fit-content;
 }
 
 #dp-h2 { /* #drawing-painting h2 */
